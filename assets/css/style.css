@@ -47,7 +47,7 @@ img{
 
 .hero_container{
     width: 1450px;
-    height: 850px;
+    height: 950px;
     
     margin:-6rem auto;
     display:flex;
@@ -93,7 +93,8 @@ img{
 .friend_user{
     width: 55px;
     border-radius: 100%;
-    margin:10px;
+    margin-left:15px;
+    
 
 }
 
@@ -169,6 +170,22 @@ img{
     border-radius: 10px;
     border:none;
 }
+.search_chat > input{
+    width: 100%;
+    border:none;
+    padding:10px;
+    margin:25px;
+}
+
+.search_chat > span{
+    font-size: 20px;
+}
+.search_chat{
+    display:flex;
+    margin-left: 20px;;
+    align-items: center;
+    padding:10px;
+}
 
 .input_chat > span{
     font-size: 20px;
@@ -186,5 +203,44 @@ img{
     color:grey;
 }
 
+/* container chat friend left */
+.container_chat_saved{
+    display:Flex;
+    flex-direction: column;
+    
+    align-items: center;
+    cursor:pointer;
+    justify-content: space-between;
+
+}
+.friend{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+}
+
+.hour > span{
+    color:grey;
+    margin:10px;
+}
+
+.last_message{
+    color:grey;
+    
+}
+
+.info_friend{
+    display:flex;
+    margin:10px;
+    flex-direction: column;
+   
+}
 
 
+.left{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
