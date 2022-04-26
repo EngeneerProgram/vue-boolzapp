@@ -1,0 +1,69 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* root  */
+:root{
+    --header-bg-color:rgba(0, 150, 136, 1);
+    --container-bg-color: rgba(219, 219, 211, 1);
+    --bg-notification: rgba(142, 218, 252, 1);
+}
+
+/* container principale */
+#app{
+    display:flex;
+    flex-direction: column;
+    
+    
+    position:Relative;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--container-bg-color);
+}
+
+header{
+    background-color: var(--header-bg-color);
+    min-width: 100%;
+    min-height: 15vh;
+}
+
+.hero_container{
+    width: 1450px;
+    height: 850px;
+    
+    margin:-6rem auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts{
+    width: 35%;
+    height: 100%;
+    background-color: purple;
+}
+
+.conversation{
+    
+    display: flex;
+    
+    flex-direction: column;
+    align-content: stretch;
+    justify-content: flex-end;
+    width: 65%;
+    height: 100%;
+    background-color: yellow;
+}
+
+.input_chat{
+    width: 100%;
+    height: 10%;
+    background-color: lime;
+}
+
+
+
+
+
