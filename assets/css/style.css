@@ -221,6 +221,14 @@ img{
     padding:10px;
 }
 
+
+.friend:hover{
+    background-color: rgba(233, 235, 235, 1);
+}
+
+.friend:focus{
+    background-color: rgba(233, 235, 235, 1);
+}
 .hour > span{
     color:grey;
     margin:10px;
