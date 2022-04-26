@@ -2,7 +2,7 @@ const app = new Vue(
     {
         el : "#app",
         data:{
-            
+            contacts_active : 0,
             contacts: [
                 {
                     name: 'Michele',

@@ -40,7 +40,7 @@
             <!--*** CONTAINER USER FRIEND CHAT *****-->
             <div class="container_chat_saved">
                 <!-- utente1 -->
-                <div  v-for="(contact, index) in contacts" @click="return_chat" class="friend">
+                <div  v-for="(contact, index) in contacts" :class="(contacts_active === index ) ? 'active' : ''" @click="contacts_active = index" class="friend">
                     <div class="left">
                         <img class="friend_user" :src="'./assets/img/avatar' + contact.avatar + '.jpg'" alt="">
                         <div class="info_friend">
@@ -85,7 +85,7 @@
                     <span>Lorem, ipsum dolor.</span>
                 </div>
                 <div class="contact_message">
-                    <span>Suo messaggio</span>
+                    <span>{{chat.messages.message}}</span>
                 </div>
                 
             </section>
