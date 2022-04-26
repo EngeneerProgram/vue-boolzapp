@@ -2,7 +2,7 @@ const app = new Vue(
     {
         el : "#app",
         data:{
-            active_image :0,
+            
             contacts: [
                 {
                     name: 'Michele',
@@ -169,6 +169,7 @@ const app = new Vue(
         },
         methods:{
             return_chat(i){
+                console.log(i);
                 
             }
         }

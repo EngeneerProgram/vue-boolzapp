@@ -60,6 +60,7 @@
             </div>
         </div>
         <!-- section contact right -->
+        
         <div class="conversation">
             <header class="header_conversation">
                 <div class="user_chat">
@@ -78,6 +79,16 @@
                     <span><i class="fa-solid fa-ellipsis-vertical"></i></span>
                 </div>
             </header>
+
+            <section v-for="(chat, i) in contacts" id="chat">
+                <div class="my_message">
+                    <span>Lorem, ipsum dolor.</span>
+                </div>
+                <div class="contact_message">
+                    <span>Suo messaggio</span>
+                </div>
+                
+            </section>
             <!-- input chat user insert -->
             <div class="input_chat">
                 <span><i class="fa-solid fa-face-smile"></i></span>

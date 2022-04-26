@@ -3,6 +3,9 @@
     padding:0;
     box-sizing: border-box;
 }
+body{
+    background-color: var(--container-bg-color);
+}
 
 /* root  */
 :root{
@@ -34,7 +37,7 @@ img{
     
     position:Relative;
     width: 100%;
-    height: 100vh;
+    height: 97vh;
     background-color: var(--container-bg-color);
 }
 
@@ -106,8 +109,21 @@ img{
     background-color: rgba(255, 255, 255, 1);
 }
 
-.header_contacts, .header_conversation{
+.header_contacts{
     width: 100%;
+    height: 6vh;
+    background-color: var(--bg_header_contact-conversation);
+    border:1px solid rgba(219, 219, 219, 1);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    
+    
+}
+.header_conversation{
+    position: fixed;
+    width: 925px;
     height: 6vh;
     background-color: var(--bg_header_contact-conversation);
     border:1px solid rgba(219, 219, 219, 1);
@@ -136,6 +152,7 @@ img{
 
 /* section conversation chat right */
 .conversation{
+    position:relative;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -144,8 +161,17 @@ img{
     height: 100%;
     border:1px solid rgba(219, 219, 219, 1);
     background-image: url(../img/mine.jpg);
+    overflow: hidden;
+    overflow-y: scroll;
     
 }
+
+.container_chat_saved{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+
 
 .icon_conversation > span{
     margin:10px;
@@ -155,11 +181,14 @@ img{
 
 /* section inside conversation chat user */
 .input_chat{
+    position: fixed;
+   bottom:58px;
+    width: 925px;
     display:flex;
     justify-content: space-between;
     align-items: center;
     padding:30px;
-    width: 100%;
+    
     height: 6vh;
     background-color: var(--bg_header_contact-conversation);
 }
@@ -226,9 +255,7 @@ img{
     background-color: rgba(233, 235, 235, 1);
 }
 
-.friend:focus{
-    background-color: rgba(233, 235, 235, 1);
-}
+
 .hour > span{
     color:grey;
     margin:10px;
@@ -252,3 +279,43 @@ img{
     justify-content: space-between;
     align-items: center;
 }
+
+.user_text{
+    color:green;
+}
+
+.contact_chat{
+    color:white;
+}
+
+.chat{
+    display:Flex;
+    flex-direction: column;
+}
+
+.my_message{
+    display:Flex;
+    justify-content: flex-end;
+    
+}
+
+.my_message > span{
+    width: 320px;
+    
+    padding:20px;
+    margin-right:80px;
+    margin-top: 50px;
+    border-radius: 10px;
+    background-color: rgba(213, 249, 186, 1);
+}
+
+.contact_message {
+    width: 320px;
+    
+    padding:20px;
+    margin-left:80px;
+    margin-top:50px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
