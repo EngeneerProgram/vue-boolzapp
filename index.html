@@ -80,7 +80,7 @@
                 </div>
             </header>
 
-            <section :class="chat.status === 'sent' ? 'my_message' : 'contact_message'" v-for="(chat, i) in contacts[contacts_active].messages" id="chat">
+            <!-- <section :class="chat.status === 'sent' ? 'my_message' : 'contact_message'" v-for="(chat, i) in contacts[contacts_active].messages" id="chat">
                 <div class="my_message">
                     <span>{{chat.message}}</span>
                 </div>
@@ -88,7 +88,11 @@
                     <span>{{chat.message}}</span>
                 </div>
                 
-            </section>
+            </section> -->
+
+            <div id="chat" v-for="(chat, i) in contacts[contacts_active].messages">
+                <span>{{chat.message}}</span>
+            </div> 
             <!-- input chat user insert -->
             <div class="input_chat">
                 <span><i class="fa-solid fa-face-smile"></i></span>
