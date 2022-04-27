@@ -49,7 +49,7 @@
                         </div>
                     </div>
                     <div class="hour">
-                        <span>{{contact.messages.date}}</span>
+                        <span>12:00</span>
                     </div>
                 </div>
 
@@ -65,7 +65,7 @@
             <header class="header_conversation">
                 <div class="user_chat">
                     <div class="user_friend">
-                       <img class="img_user" src="./assets/img/avatar_8.jpg" alt="">
+                       <img class="img_user" :src="'./assets/img/avatar' + contacts[contacts_active].avatar + '.jpg'" alt="">
                     </div>
                     <div class="general">
                         <span class="name">Michele</span>
@@ -80,12 +80,12 @@
                 </div>
             </header>
 
-            <section v-for="(chat, i) in contacts" id="chat">
+            <section :class="chat.status === 'sent' ? 'my_message' : 'contact_message'" v-for="(chat, i) in contacts[contacts_active].messages" id="chat">
                 <div class="my_message">
-                    <span>Lorem, ipsum dolor.</span>
+                    <span>{{chat.message}}</span>
                 </div>
                 <div class="contact_message">
-                    <span>{{chat.messages.message}}</span>
+                    <span>{{chat.message}}</span>
                 </div>
                 
             </section>
