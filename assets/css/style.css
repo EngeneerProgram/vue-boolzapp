@@ -49,7 +49,7 @@ img{
 }
 
 .hero_container{
-     width: 1450px; 
+     width: 66.6vw;
     
     height: 950px;
     
@@ -124,7 +124,7 @@ img{
 }
 .header_conversation{
     position: fixed;
-    width: 925px;
+    width: 42.4vw;
     height: 6vh;
     background-color: var(--bg_header_contact-conversation);
     border:1px solid rgba(219, 219, 219, 1);
@@ -184,7 +184,7 @@ img{
 .input_chat{
     position: fixed;
    bottom:58px;
-    width: 925px;
+    width: 42.4vw;
     display:flex;
     justify-content: space-between;
     align-items: center;
