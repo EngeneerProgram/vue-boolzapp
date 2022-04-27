@@ -5,7 +5,7 @@ const app = new Vue(
         data:{
             insert_msg:{
                 date: new Date().toLocaleString(),
-                message:"",
+                 message:"",
                 status: "sent"
             },
             contacts_active : 0,
@@ -178,7 +178,7 @@ const app = new Vue(
                 // this.contacts[this.contacts_active].messages.push(this.insert_msg);
                 const msg={
                     date:new Date().toLocaleString(),
-                    message: this.add_message,
+                    message: this.insert_msg.message,
                     status:"sent"
                 }
                 this.contacts[this.contacts_active].messages.push(msg)
