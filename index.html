@@ -89,11 +89,17 @@
                 </div>
                 
             </section> -->
+           
+            <div class="container_chat">
+                <div id="chat" :class="chat.status === 'sent' ? 'my_message' : 'contact_message'" v-for="(chat, i) in contacts[contacts_active].messages">
+                    <span class="my_message">{{chat.message}}</span>
+                </div>  
 
-            <div id="chat" v-for="(chat, i) in contacts[contacts_active].messages">
-                <span>{{chat.message}}</span>
-            </div> 
+            </div>
             <!-- input chat user insert -->
+            <!-- //footer -->
+
+            
             <div class="input_chat">
                 <span><i class="fa-solid fa-face-smile"></i></span>
                 <input type="text" placeholder="Scrivi un messaggio">
