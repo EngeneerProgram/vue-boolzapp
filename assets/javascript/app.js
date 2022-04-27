@@ -190,7 +190,7 @@ const app = new Vue(
                     };
                     app.contacts[app.contacts_active].messages.push(message)
                 }, 1000)
-               this.insert_msg = ""
+               this.insert_msg.message = ""
                 
             },
 
