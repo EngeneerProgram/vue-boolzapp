@@ -1,7 +1,13 @@
 const app = new Vue(
     {
         el : "#app",
+        
         data:{
+            insert_msg:{
+                date: new Date().toLocaleString(),
+                message:"",
+                status: "sent"
+            },
             contacts_active : 0,
             contacts: [
                 {
@@ -168,10 +174,20 @@ const app = new Vue(
             ]
         },
         methods:{
-            return_chat(i){
-                console.log(i);
+            add_message(){
+                this.contacts[this.contacts_active].messages.push(this.insert_msg);
+                setTimeout(function (){
+                    const message = {
+                        date: new Date().toLocaleString(),
+                        message: "ok",
+                        status: "received",
+                    };
+                    app.contacts[app.contacts_active].messages.push(message)
+                }, 1000)
+               this.insert_msg = ""
                 
-            }
+            },
+
         }
     }
 )

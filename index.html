@@ -102,7 +102,7 @@
             
             <div class="input_chat">
                 <span><i class="fa-solid fa-face-smile"></i></span>
-                <input type="text" placeholder="Scrivi un messaggio">
+                <input v-model="insert_msg.message" @keyup.enter="add_message" type="text" placeholder="Scrivi un messaggio">
                 <span><i class="fa-solid fa-microphone"></i></span>
             </div>
         </div>
