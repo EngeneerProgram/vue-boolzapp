@@ -175,7 +175,13 @@ const app = new Vue(
         },
         methods:{
             add_message(){
-                this.contacts[this.contacts_active].messages.push(this.insert_msg);
+                // this.contacts[this.contacts_active].messages.push(this.insert_msg);
+                const msg={
+                    date:new Date().toLocaleString(),
+                    message: this.add_message,
+                    status:"sent"
+                }
+                this.contacts[this.contacts_active].messages.push(msg)
                 setTimeout(function (){
                     const message = {
                         date: new Date().toLocaleString(),
