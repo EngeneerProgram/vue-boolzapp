@@ -9,6 +9,7 @@ const app = new Vue(
                 status: "sent"
             },
             contacts_active : 0,
+            input_search : "",
             contacts: [
                 {
                     name: 'Michele',
@@ -193,6 +194,17 @@ const app = new Vue(
                this.insert_msg.message = ""
                 
             },
+
+            confront(contact, i){
+                const name = contact.name.toLoverCase();
+                const input_search = this.input_search.toLowerCase();
+                if(!name.includes(input_search)){
+                    this.contacts[i].visible = false;
+                }else{
+                    this.contacts[i].visible=true;
+                }
+                return this.contacts[i].visible;
+            }
 
         }
     }
